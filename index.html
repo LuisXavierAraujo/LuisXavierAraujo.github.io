@@ -1,0 +1,160 @@
+
+<frame src='./pdfs/nomeficheiro.pdf'> </frame>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" /> 
+   <title>Projeto Neuro-Oftalmologia</title>
+  </head>
+  <body>
+	<center>
+	<h1>
+		<font face="Verdana" color=#0174DF>PDF viewer</font> 
+		
+	</h1> </center>
+  <table width="100%" height="100%" border="1px" >
+		<tr>
+			<th style="background-color:rgb(52, 68, 212)">&nbsp</th>
+			<th style="background-color:rgb(52, 68, 212)">Olho direito</th>
+			<th style="background-color:rgb(52, 68, 212)">Olho Esquerdo</th>
+		</tr>
+		<tr>
+			<th style="background-color:rgb(52, 68, 212)"> PET</th>
+        	<th>
+				<form width="100%" height="100%" name="uploadForm">
+					<div width="100%" height="100%">
+					  <input width="100%" height="100%" id="uploadInput1" type="file" name="myFiles" multiple>
+					</div>
+					<div><input type="submit" value="Send file"></div>
+						<iframe width="100%" height="500px" id="showFile1"></iframe>
+				  </form>
+				
+				  <script>
+				  function updateSize() {
+						oFiles = this.files
+						const obj_url = URL.createObjectURL(oFiles [0] );
+						document.getElementById("showFile1").setAttribute('src', obj_url);
+					
+				  }
+				
+				  document.getElementById("uploadInput1").addEventListener("change", updateSize, false);
+				  </script>
+			</th>
+			<th>
+				<form width="100%" height="100%" name="uploadForm">
+					<div width="100%" height="100%">
+					  <input width="100%" height="100%" id="uploadInput2" type="file" name="myFiles" multiple>
+					</div>
+					<div><input type="submit" value="Send file"></div>
+						<iframe width="100%" height="500px" id="showFile2"></iframe>
+				  </form>
+				
+				  <script>
+				  function updateSize() {
+						oFiles = this.files
+						const obj_url = URL.createObjectURL(oFiles [0] );
+						document.getElementById("showFile2").setAttribute('src', obj_url);
+					
+				  }
+				
+				  document.getElementById("uploadInput2").addEventListener("change", updateSize, false);
+				  </script>
+			</th>
+		</tr>
+		<tr>
+			<th style="background-color:rgb(52, 68, 212)">OCT</th>
+			<th>
+				<form width="100%" height="100%" name="uploadForm">
+					<div width="100%" height="100%">
+					  <input width="100%" height="100%" id="uploadInput3" type="file" name="myFiles" multiple>
+					</div>
+					<div><input type="submit" value="Send file"></div>
+						<iframe width="100%" height="500px" id="showFile3"></iframe>
+				  </form>
+				
+				  <script>
+				  function updateSize() {
+						oFiles = this.files
+						const obj_url = URL.createObjectURL(oFiles [0] );
+						document.getElementById("showFile3").setAttribute('src', obj_url);
+					
+				  }
+				
+				  document.getElementById("uploadInput3").addEventListener("change", updateSize, false);
+				  </script>
+			</th>
+			<th >
+				<form width="100%" height="100%" name="uploadForm">
+					<div width="100%" height="100%">
+					  <input width="100%" height="100%" id="uploadInput4" type="file" name="myFiles" multiple>
+					</div>
+					<div><input type="submit" value="Send file"></div>
+						<iframe width="100%" height="500px" id="showFile4"></iframe>
+				  </form>
+				
+				  <script>
+				  function updateSize() {
+						oFiles = this.files
+						const obj_url = URL.createObjectURL(oFiles [0] );
+						document.getElementById("showFile4").setAttribute('src', obj_url);
+					
+				  }
+				
+				  document.getElementById("uploadInput4").addEventListener("change", updateSize, false);
+				  </script>
+			</th>
+		</tr>
+		<tr>		
+			
+			<th style="background-color:rgb(52, 68, 212)">AV</th>
+			<th >
+				<form width="100%" height="100%" name="uploadForm">
+					<div width="100%" height="100%">
+					  <input width="100%" height="100%" id="uploadInput5" type="file" name="myFiles" multiple>
+					</div>
+					<div><input type="submit" value="Send file"></div>
+						<iframe width="100%" height="500px" id="showFile5"></iframe>
+				  </form>
+				
+				  <script>
+				  function updateSize() {
+						oFiles = this.files
+						const obj_url = URL.createObjectURL(oFiles[0] );
+						document.getElementById("showFile5").setAttribute('src', obj_url);
+					
+				  }
+				
+				  document.getElementById("uploadInput5").addEventListener("change", updateSize, false);
+				  </script>
+			</th>
+			<th >
+				<form width="100%" height="100%" name="uploadForm">
+					<div width="100%" height="100%">
+					  <input width="100%" height="100%" id="uploadInput6" type="file" name="myFiles" multiple>
+					</div>
+					<div><input type="submit" value="Send file"></div>
+						<iframe width="100%" height="500px" id="showFile6"></iframe>
+				  </form>
+				
+				  <script>
+				  function updateSize() {
+						oFiles = this.files
+						const obj_url = URL.createObjectURL(oFiles [0] );
+						document.getElementById("showFile6").setAttribute('src', obj_url);
+					
+				  }
+				
+				  document.getElementById("uploadInput6").addEventListener("change", updateSize, false);
+				  </script>
+			</th>
+		</tr>
+		<tr>
+			</th>
+		</tr style="background-color:rgb(93, 102, 190)">
+		<tr>
+			<th colspan ="3"><div style="font-size:11px"> ©️Joana Coutinho e Luís Araujo (e David Silva) 2020/2021</div></th>
+		</tr>
+</table>
+    <script src="dist/bundle.js"></script>
+  </body>
+</html>
